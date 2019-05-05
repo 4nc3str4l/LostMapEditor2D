@@ -1,7 +1,7 @@
 #pragma once
 
-#include "logic/application.h"
-#include "gfx/window.h"
+#include "le/logic/application.h"
+#include "le/gfx/window.h"
 
 class LostMapEditor: public le::Application
 {
