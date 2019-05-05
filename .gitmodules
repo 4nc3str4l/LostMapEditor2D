@@ -1,0 +1,3 @@
+[submodule "libs/LostEngine2D"]
+	path = libs/LostEngine2D
+	url = https://github.com/4nc3str4l/LostEngine2D.git
