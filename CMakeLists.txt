@@ -1,6 +1,10 @@
 cmake_minimum_required (VERSION 3.9.0)
 project(LostMap2D)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 add_subdirectory(${CMAKE_SOURCE_DIR}/libs/LostEngine2D/src)
 
 lost_engine_includes()
