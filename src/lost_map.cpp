@@ -13,7 +13,7 @@ LostMapEditor::LostMapEditor(const std::string& title, int width, int height): A
 
 void LostMapEditor::init(le::Window* _window)
 {
-    auto shader = le::Loader::shader("res/shaders/sprite");
+    auto shader = le::Loader::shader("res/shaders/light_sprite");
     EventManager::onFileDropped.Bind<LostMapEditor, &LostMapEditor::onFileDropped>(this);
 
     // Configure shaders
@@ -40,7 +40,6 @@ void LostMapEditor::onFileDropped(const std::string& path)
 {
     LOG_INFO("Dropped file: ", path);
     auto texture = le::Loader::LoadTexture(path, true);
-    LOG_INFO(Input::MousePosX, Input::MousePosY);
     sprites.push_back(new le::Sprite(Input::MousePosX, Input::MousePosY, texture));
 }
 
